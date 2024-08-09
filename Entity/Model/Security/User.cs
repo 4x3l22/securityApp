@@ -14,19 +14,19 @@ namespace Entity.Model.Security
 
         public string? passsword { get; set;  }
 
-        public Person person { get; set; } = new Person();  
+        public Person person { get; set; }
         public int PersonId { get; set; }
 
         public DateTime created_at { get; set; }
 
-        public DateTime created_by { get; set; }
+        public DateTime? created_by { get; set; }
 
-        public DateTime updated_at { get; set; }
+        public DateTime? updated_at { get; set; }
 
-        public DateTime updated_by { get; set; }
+        public DateTime? updated_by { get; set; }
 
-        public DateTime deleted_at { get; set; }
-        public DateTime deleted_by { get; set; }
+        public DateTime? deleted_at { get; set; }
+        public DateTime? deleted_by { get; set; }
 
         public bool state { get; set; }
 

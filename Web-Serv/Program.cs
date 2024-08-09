@@ -1,3 +1,11 @@
+using Business.Interfaces.Location;
+using Business.Interfaces.Security;
+using Business.Service.Location;
+using Business.Service.Security;
+using Data.Implemenst.Location;
+using Data.Implemenst.Security;
+using Data.Interfaces.Location;
+using Data.Interfaces.Security;
 using Entity.Model.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +26,28 @@ builder.Services.AddCors(options =>
 // Configura DbContext con SQL Server
 builder.Services.AddDbContext<AplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbfaultConnection")));
+
+builder.Services.AddScoped<IUserBisness,BusinessUser>();
+builder.Services.AddScoped<IDUser, DUser>();
+builder.Services.AddScoped<IPersonBusiness, BusinessPerson>();
+builder.Services.AddScoped<IDPerson, DPerson>();
+builder.Services.AddScoped<IModuleBusiness, BusinessModule>();
+builder.Services.AddScoped<IDModule, DModule>();
+builder.Services.AddScoped<IRoleBusiness, BusinessRole>();
+builder.Services.AddScoped<IDRole, DRole>();
+builder.Services.AddScoped<IRoleViewBusiness, BusinessRoleView>();
+builder.Services.AddScoped<IDRoleView, DRole_view>();
+builder.Services.AddScoped<IUserRoleBusiness, BusinessUserRole>();
+builder.Services.AddScoped<IDUserRol, DUserRol>();
+builder.Services.AddScoped<IViewBusiness, BusinessView>();
+builder.Services.AddScoped<IDView, DView>();
+builder.Services.AddScoped<ICountryBusiness, BusinessCountry>();
+builder.Services.AddScoped<IDCountry, DCountry>();
+builder.Services.AddScoped<IContinentBusiness, BusinessContinent>();
+builder.Services.AddScoped<IDContinent, DContinent>();
+builder.Services.AddScoped<ICityBusiness, BusinessCity>();
+builder.Services.AddScoped<IDCity, DCity>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

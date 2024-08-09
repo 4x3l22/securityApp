@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity.Model.Location;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace Entity.Model.Security
 
         public string? gender { get; set; }
 
-        public string? document { get; set; }
+        public uint? document { get; set; }
 
         public string? type_document { get; set; }
 
@@ -27,20 +28,23 @@ namespace Entity.Model.Security
 
         public string? phone { get; set; }
 
-        public DateTime birthday { get; set; }
+        public int cityId { get; set; }
+        public City city { get; set; }
 
-        public DateTime created_at { get;set; }
+        public DateTime? birthday { get; set; }
 
-        public DateTime created_by { get; set; }
+        public DateTime? created_at { get;set; }
 
-        public DateTime updated_at { get; set;}
+        public DateTime? created_by { get; set; }
 
-        public DateTime updated_by{ get; set; }
+        public DateTime? updated_at { get; set;}
 
-        public DateTime deleted_at { get; set; }
-        public DateTime deleted_by { get; set; }
+        public DateTime? updated_by{ get; set; }
 
-        public bool      state { get; set; }
+        public DateTime? deleted_at { get; set; }
+        public DateTime? deleted_by { get; set; }
+
+        public bool state { get; set; }
 
 
 

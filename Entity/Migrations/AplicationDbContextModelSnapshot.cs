@@ -22,6 +22,109 @@ namespace Entity.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Entity.Model.Location.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("countryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("create_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("delete_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("update_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("countryId");
+
+                    b.ToTable("Citys");
+                });
+
+            modelBuilder.Entity("Entity.Model.Location.Continent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("create_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("delete_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("update_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Continents");
+                });
+
+            modelBuilder.Entity("Entity.Model.Location.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("continentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("create_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("delete_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("state")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("update_at")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("continentId");
+
+                    b.ToTable("Countrys");
+                });
+
             modelBuilder.Entity("Entity.Model.Security.Module", b =>
                 {
                     b.Property<int>("Id")
@@ -31,31 +134,30 @@ namespace Entity.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("created_at")
+                    b.Property<DateTime?>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -71,26 +173,29 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("birthday")
+                    b.Property<DateTime?>("birthday")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_at")
+                    b.Property<int>("cityId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("direction")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("document")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long?>("document")
+                        .HasColumnType("bigint");
 
                     b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
@@ -113,13 +218,15 @@ namespace Entity.Migrations
                     b.Property<string>("type_document")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("cityId");
 
                     b.ToTable("Person");
                 });
@@ -138,25 +245,25 @@ namespace Entity.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("created_at")
+                    b.Property<DateTime?>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -172,44 +279,38 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("IdRole")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdView")
+                    b.Property<int>("ViewId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("roleId")
-                        .HasColumnType("int");
 
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("viewId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("roleId");
+                    b.HasIndex("RoleId");
 
-                    b.HasIndex("viewId");
+                    b.HasIndex("ViewId");
 
                     b.ToTable("RoleView");
                 });
@@ -231,13 +332,13 @@ namespace Entity.Migrations
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("passsword")
@@ -246,10 +347,10 @@ namespace Entity.Migrations
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -270,20 +371,17 @@ namespace Entity.Migrations
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("description")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("idModule")
-                        .HasColumnType("int");
 
                     b.Property<int>("moduleId")
                         .HasColumnType("int");
@@ -297,10 +395,10 @@ namespace Entity.Migrations
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -318,59 +416,86 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("IdRole")
+                    b.Property<int>("RoleId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdUser")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("created_by")
+                    b.Property<DateTime?>("created_by")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_at")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("deleted_by")
+                    b.Property<DateTime?>("deleted_by")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("roleId")
-                        .HasColumnType("int");
 
                     b.Property<bool>("state")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("updated_at")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("updated_by")
+                    b.Property<DateTime?>("updated_by")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("roleId");
+                    b.HasIndex("RoleId");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Userroles");
+                });
+
+            modelBuilder.Entity("Entity.Model.Location.City", b =>
+                {
+                    b.HasOne("Entity.Model.Location.Country", "country")
+                        .WithMany()
+                        .HasForeignKey("countryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("country");
+                });
+
+            modelBuilder.Entity("Entity.Model.Location.Country", b =>
+                {
+                    b.HasOne("Entity.Model.Location.Continent", "continent")
+                        .WithMany()
+                        .HasForeignKey("continentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("continent");
+                });
+
+            modelBuilder.Entity("Entity.Model.Security.Person", b =>
+                {
+                    b.HasOne("Entity.Model.Location.City", "city")
+                        .WithMany()
+                        .HasForeignKey("cityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("city");
                 });
 
             modelBuilder.Entity("Entity.Model.Security.Role_view", b =>
                 {
                     b.HasOne("Entity.Model.Security.Role", "role")
                         .WithMany()
-                        .HasForeignKey("roleId")
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Entity.Model.Security.View", "view")
                         .WithMany()
-                        .HasForeignKey("viewId")
+                        .HasForeignKey("ViewId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -405,13 +530,13 @@ namespace Entity.Migrations
                 {
                     b.HasOne("Entity.Model.Security.Role", "role")
                         .WithMany()
-                        .HasForeignKey("roleId")
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Entity.Model.Security.User", "user")
                         .WithMany()
-                        .HasForeignKey("userId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

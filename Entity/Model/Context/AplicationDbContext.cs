@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Entity.Model.Location;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -74,6 +75,9 @@ namespace Entity.Model.Context
         public DbSet<User> Users { get; set; }
         public DbSet<View> Views { get; set; }
         public DbSet<user_role> Userroles { get; set; }
+        public DbSet<City> Citys { get; set; }
+        public DbSet<Country> Countrys { get; set; }
+        public DbSet<Continent> Continents { get; set; }
     }
 
     public readonly struct DapperEFCoreCommand : IDisposable

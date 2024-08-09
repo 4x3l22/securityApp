@@ -20,10 +20,6 @@
           <EntitySet Name="role_views" EntityType="ModelBd.role_view" />
           <EntitySet Name="Modules" EntityType="ModelBd.Module" />
           <EntitySet Name="Persons" EntityType="ModelBd.Person" />
-          <AssociationSet Name="UserPerson" Association="ModelBd.UserPerson">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Person" EntitySet="Persons" />
-          </AssociationSet>
           <AssociationSet Name="user_roleUser" Association="ModelBd.user_roleUser">
             <End Role="user_role" EntitySet="user_roles" />
             <End Role="User" EntitySet="Users" />
@@ -44,6 +40,25 @@
             <End Role="role_view" EntitySet="role_views" />
             <End Role="View" EntitySet="views" />
           </AssociationSet>
+          <AssociationSet Name="PersonUser" Association="ModelBd.PersonUser">
+            <End Role="Person" EntitySet="Persons" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <EntitySet Name="continents" EntityType="ModelBd.continent" />
+          <EntitySet Name="countrys" EntityType="ModelBd.country" />
+          <EntitySet Name="citys" EntityType="ModelBd.city" />
+          <AssociationSet Name="continentcountry" Association="ModelBd.continentcountry">
+            <End Role="continent" EntitySet="continents" />
+            <End Role="country" EntitySet="countrys" />
+          </AssociationSet>
+          <AssociationSet Name="countrycity" Association="ModelBd.countrycity">
+            <End Role="country" EntitySet="countrys" />
+            <End Role="city" EntitySet="citys" />
+          </AssociationSet>
+          <AssociationSet Name="cityPerson" Association="ModelBd.cityPerson">
+            <End Role="city" EntitySet="citys" />
+            <End Role="Person" EntitySet="Persons" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="User">
           <Key>
@@ -59,8 +74,9 @@
           <Property Name="update_at" Type="DateTime" Nullable="false" />
           <Property Name="update_by" Type="DateTime" Nullable="false" />
           <Property Name="state" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="PersonId" Relationship="ModelBd.UserPerson" FromRole="User" ToRole="Person" />
           <NavigationProperty Name="lstUser_role" Relationship="ModelBd.user_roleUser" FromRole="User" ToRole="user_role" />
+          <NavigationProperty Name="idPerson" Relationship="ModelBd.PersonUser" FromRole="User" ToRole="Person" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -110,6 +126,7 @@
           <Property Name="state" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="IdModule" Relationship="ModelBd.ViewModule" FromRole="View" ToRole="Module" />
           <NavigationProperty Name="lstRole_view" Relationship="ModelBd.role_viewView" FromRole="View" ToRole="role_view" />
+          <Property Name="moduleId" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="role_view">
           <Key>
@@ -162,12 +179,10 @@
           <Property Name="update_at" Type="DateTime" Nullable="false" />
           <Property Name="update_by" Type="DateTime" Nullable="false" />
           <Property Name="state" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="lstUser" Relationship="ModelBd.UserPerson" FromRole="Person" ToRole="User" />
+          <NavigationProperty Name="setUser" Relationship="ModelBd.PersonUser" FromRole="Person" ToRole="User" />
+          <NavigationProperty Name="Idcity" Relationship="ModelBd.cityPerson" FromRole="Person" ToRole="city" />
+          <Property Name="cityId" Type="Int32" Nullable="false" />
         </EntityType>
-        <Association Name="UserPerson">
-          <End Type="ModelBd.User" Role="User" Multiplicity="1" />
-          <End Type="ModelBd.Person" Role="Person" Multiplicity="1" />
-        </Association>
         <Association Name="user_roleUser">
           <End Type="ModelBd.user_role" Role="user_role" Multiplicity="*" />
           <End Type="ModelBd.User" Role="User" Multiplicity="1" />
@@ -187,6 +202,97 @@
         <Association Name="role_viewView">
           <End Type="ModelBd.role_view" Role="role_view" Multiplicity="*" />
           <End Type="ModelBd.View" Role="View" Multiplicity="1" />
+        </Association>
+        <Association Name="PersonUser">
+          <End Type="ModelBd.Person" Role="Person" Multiplicity="1" />
+          <End Type="ModelBd.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="continent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="create_at" Type="String" Nullable="false" />
+          <Property Name="update_at" Type="String" Nullable="false" />
+          <Property Name="delete_at" Type="String" Nullable="false" />
+          <Property Name="state" Type="String" Nullable="false" />
+          <NavigationProperty Name="setcountry" Relationship="ModelBd.continentcountry" FromRole="continent" ToRole="country" />
+        </EntityType>
+        <EntityType Name="country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="create_at" Type="String" Nullable="false" />
+          <Property Name="update_at" Type="String" Nullable="false" />
+          <Property Name="delete_at" Type="String" Nullable="false" />
+          <Property Name="state" Type="String" Nullable="false" />
+          <NavigationProperty Name="Idcontinent" Relationship="ModelBd.continentcountry" FromRole="country" ToRole="continent" />
+          <Property Name="continentId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="setcity" Relationship="ModelBd.countrycity" FromRole="country" ToRole="city" />
+        </EntityType>
+        <EntityType Name="city">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" />
+          <Property Name="description" Type="String" Nullable="false" />
+          <Property Name="create_at" Type="String" Nullable="false" />
+          <Property Name="update_at" Type="String" Nullable="false" />
+          <Property Name="delete_at" Type="String" Nullable="false" />
+          <Property Name="state" Type="String" Nullable="false" />
+          <NavigationProperty Name="Idcountry" Relationship="ModelBd.countrycity" FromRole="city" ToRole="country" />
+          <Property Name="countryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="setPerson" Relationship="ModelBd.cityPerson" FromRole="city" ToRole="Person" />
+        </EntityType>
+        <Association Name="continentcountry">
+          <End Type="ModelBd.continent" Role="continent" Multiplicity="1" />
+          <End Type="ModelBd.country" Role="country" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="continent">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="country">
+              <PropertyRef Name="continentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="countrycity">
+          <End Type="ModelBd.country" Role="country" Multiplicity="1" />
+          <End Type="ModelBd.city" Role="city" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="country">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="city">
+              <PropertyRef Name="countryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cityPerson">
+          <End Type="ModelBd.city" Role="city" Multiplicity="1" />
+          <End Type="ModelBd.Person" Role="Person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="cityId" />
+            </Dependent>
+          </ReferentialConstraint>
         </Association>
       </Schema>
     </edmx:ConceptualModels>

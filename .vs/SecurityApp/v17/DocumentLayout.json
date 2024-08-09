@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EB8B93F-0DD9-421F-959B-1F7D43A19D0C}|Diagram\\Diagram.csproj|c:\\users\\usuario\\documents\\securityapp\\diagram\\modelbd.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{2EB8B93F-0DD9-421F-959B-1F7D43A19D0C}|Diagram\\Diagram.csproj|solutionrelative:diagram\\modelbd.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\security\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\security\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\interfaces\\security\\icontrollerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\interfaces\\security\\icontrollerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|c:\\users\\usuario\\documents\\securityapp\\entity\\migrations\\20240803213102_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|solutionrelative:entity\\migrations\\20240803213102_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\service\\security\\businessview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\service\\security\\businessview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\modulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\interfaces\\security\\iviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\interfaces\\security\\iviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|c:\\users\\usuario\\documents\\securityapp\\entity\\model\\security\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9444293D-2AF4-4145-AA16-CC40637CCEF5}|Entity\\Entity.csproj|solutionrelative:entity\\model\\security\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\usuario\\documents\\securityapp\\data\\implemenst\\security\\dview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\implemenst\\security\\dview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\interfaces\\icontrollermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\interfaces\\icontrollermodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\usuario\\documents\\securityapp\\data\\interfaces\\security\\idview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\interfaces\\security\\idview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,104 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ModelBd.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Diagram\\ModelBd.edmx",
-              "RelativeDocumentMoniker": "Diagram\\ModelBd.edmx",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Diagram\\ModelBd.edmx [Diagram1]",
-              "RelativeToolTip": "Diagram\\ModelBd.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-08-03T21:56:35.187Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20240803213102_primera.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Entity\\Migrations\\20240803213102_primera.cs",
-              "RelativeDocumentMoniker": "Entity\\Migrations\\20240803213102_primera.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Entity\\Migrations\\20240803213102_primera.cs",
-              "RelativeToolTip": "Entity\\Migrations\\20240803213102_primera.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBcAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T21:31:03.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "ViewController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\ViewController.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\ViewController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\ViewController.cs",
-              "RelativeToolTip": "Web-Serv\\Controllers\\ViewController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Security\\ViewController.cs",
+              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Security\\ViewController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Security\\ViewController.cs",
+              "RelativeToolTip": "Web-Serv\\Controllers\\Security\\ViewController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T21:04:18.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IControllerModule.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\IControllerModule.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Interfaces\\IControllerModule.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\IControllerModule.cs",
-              "RelativeToolTip": "Web-Serv\\Controllers\\Interfaces\\IControllerModule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T21:01:00.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ModuleController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\ModuleController.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\ModuleController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\ModuleController.cs",
-              "RelativeToolTip": "Web-Serv\\Controllers\\ModuleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T21:00:55.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Entity\\Model\\Security\\Person.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Security\\Person.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Entity\\Model\\Security\\Person.cs",
-              "RelativeToolTip": "Entity\\Model\\Security\\Person.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T20:00:44.709Z",
+              "WhenOpened": "2024-08-09T19:03:56.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Program.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Program.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Program.cs",
-              "RelativeToolTip": "Web-Serv\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAnAAAA",
+              "Title": "IControllerView.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
+              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
+              "RelativeToolTip": "Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T18:24:21.782Z",
+              "WhenOpened": "2024-08-09T19:03:52.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BusinessView.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Security\\BusinessView.cs",
+              "RelativeDocumentMoniker": "Business\\Service\\Security\\BusinessView.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Security\\BusinessView.cs",
+              "RelativeToolTip": "Business\\Service\\Security\\BusinessView.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T19:03:45.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IViewBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Security\\IViewBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\Security\\IViewBusiness.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Security\\IViewBusiness.cs",
+              "RelativeToolTip": "Business\\Interfaces\\Security\\IViewBusiness.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T19:03:39.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DView.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Security\\DView.cs",
+              "RelativeDocumentMoniker": "Data\\Implemenst\\Security\\DView.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Security\\DView.cs",
+              "RelativeToolTip": "Data\\Implemenst\\Security\\DView.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T19:02:32.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\appsettings.json",
-              "RelativeDocumentMoniker": "Web-Serv\\appsettings.json",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\appsettings.json",
-              "RelativeToolTip": "Web-Serv\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-29T19:48:14.433Z",
+              "Title": "IDView.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Interfaces\\Security\\IDView.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\Security\\IDView.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Interfaces\\Security\\IDView.cs",
+              "RelativeToolTip": "Data\\Interfaces\\Security\\IDView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T19:02:23.525Z",
               "EditorCaption": ""
             }
           ]
