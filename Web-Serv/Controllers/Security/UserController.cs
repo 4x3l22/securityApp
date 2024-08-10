@@ -33,7 +33,7 @@ namespace Web_Serv.Controllers.Security
                 var response = new
                 {
                     LoginDao = result.loginDao,
-                    MenuDao = result.menuDto
+                    MenuDto = result.menuDto
                 };
 
                 return Ok(response);

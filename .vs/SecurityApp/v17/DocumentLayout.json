@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\security\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\security\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\service\\location\\businesscity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\service\\location\\businesscity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\interfaces\\security\\icontrollerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\interfaces\\security\\icontrollerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\location\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\location\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\service\\security\\businessview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\service\\security\\businessview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|c:\\users\\usuario\\documents\\securityapp\\web-serv\\controllers\\interfaces\\location\\icontrollercity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{961BCC69-063E-4922-BE84-4545CAD732E7}|Web-Serv\\Web-Serv.csproj|solutionrelative:web-serv\\controllers\\interfaces\\location\\icontrollercity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\interfaces\\security\\iviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\interfaces\\security\\iviewbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\usuario\\documents\\securityapp\\data\\implemenst\\location\\dcity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\implemenst\\location\\dcity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\usuario\\documents\\securityapp\\data\\implemenst\\security\\dview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\implemenst\\security\\dview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|c:\\users\\usuario\\documents\\securityapp\\data\\interfaces\\security\\idview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA4676D1-29D2-4885-976D-5DF809BA87CF}|Data\\Data.csproj|solutionrelative:data\\interfaces\\security\\idview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|c:\\users\\usuario\\documents\\securityapp\\business\\interfaces\\location\\icitybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B122C59-5A7A-4BCA-AA42-5BA42144BE3E}|Business\\Business.csproj|solutionrelative:business\\interfaces\\location\\icitybusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ViewController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Security\\ViewController.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Security\\ViewController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Security\\ViewController.cs",
-              "RelativeToolTip": "Web-Serv\\Controllers\\Security\\ViewController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA3AAAA",
+              "Title": "BusinessCity.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Location\\BusinessCity.cs",
+              "RelativeDocumentMoniker": "Business\\Service\\Location\\BusinessCity.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Location\\BusinessCity.cs",
+              "RelativeToolTip": "Business\\Service\\Location\\BusinessCity.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:03:56.725Z",
+              "WhenOpened": "2024-08-10T22:07:29.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IControllerView.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
-              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
-              "RelativeToolTip": "Web-Serv\\Controllers\\Interfaces\\Security\\IControllerView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Title": "CityController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Location\\CityController.cs",
+              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Location\\CityController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Location\\CityController.cs",
+              "RelativeToolTip": "Web-Serv\\Controllers\\Location\\CityController.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:03:52.369Z",
+              "WhenOpened": "2024-08-10T22:07:02.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BusinessView.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Security\\BusinessView.cs",
-              "RelativeDocumentMoniker": "Business\\Service\\Security\\BusinessView.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Service\\Security\\BusinessView.cs",
-              "RelativeToolTip": "Business\\Service\\Security\\BusinessView.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Title": "IControllerCity.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Location\\IControllerCity.cs",
+              "RelativeDocumentMoniker": "Web-Serv\\Controllers\\Interfaces\\Location\\IControllerCity.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Web-Serv\\Controllers\\Interfaces\\Location\\IControllerCity.cs",
+              "RelativeToolTip": "Web-Serv\\Controllers\\Interfaces\\Location\\IControllerCity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:03:45.838Z",
+              "WhenOpened": "2024-08-10T22:06:53.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IViewBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Security\\IViewBusiness.cs",
-              "RelativeDocumentMoniker": "Business\\Interfaces\\Security\\IViewBusiness.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Security\\IViewBusiness.cs",
-              "RelativeToolTip": "Business\\Interfaces\\Security\\IViewBusiness.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Title": "DCity.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Location\\DCity.cs",
+              "RelativeDocumentMoniker": "Data\\Implemenst\\Location\\DCity.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Location\\DCity.cs",
+              "RelativeToolTip": "Data\\Implemenst\\Location\\DCity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:03:39.908Z",
+              "WhenOpened": "2024-08-10T21:55:47.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DView.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Security\\DView.cs",
-              "RelativeDocumentMoniker": "Data\\Implemenst\\Security\\DView.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Implemenst\\Security\\DView.cs",
-              "RelativeToolTip": "Data\\Implemenst\\Security\\DView.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwCkAAAA1AAAA",
+              "Title": "ICityBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Location\\ICityBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\Location\\ICityBusiness.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Business\\Interfaces\\Location\\ICityBusiness.cs",
+              "RelativeToolTip": "Business\\Interfaces\\Location\\ICityBusiness.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:02:32.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IDView.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Interfaces\\Security\\IDView.cs",
-              "RelativeDocumentMoniker": "Data\\Interfaces\\Security\\IDView.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\SecurityApp\\Data\\Interfaces\\Security\\IDView.cs",
-              "RelativeToolTip": "Data\\Interfaces\\Security\\IDView.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T19:02:23.525Z",
+              "WhenOpened": "2024-08-10T20:55:45.445Z",
               "EditorCaption": ""
             }
           ]

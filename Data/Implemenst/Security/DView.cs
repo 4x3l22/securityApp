@@ -4,11 +4,6 @@ using Entity.Model.Context;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Implemenst.Security
 {
@@ -36,7 +31,7 @@ namespace Data.Implemenst.Security
         public async Task<IEnumerable<ViewDto>> GetAllSelect()
         {
             var sql = @"SELECT * FROM dbo.Views 
-                        WHERE delete_at IS NULL
+                        WHERE deleted_at IS NULL
                         AND state = 1
                         ORDER BY Id ASC";
             return await DbContext.QueryAsync<ViewDto>(sql);
@@ -62,9 +57,5 @@ namespace Data.Implemenst.Security
             return await DbContext.Views.AsNoTracking().FirstOrDefaultAsync(item => item.Id == code);
         }
 
-        Task<IEnumerable<DataSelectDto>> IDView.GetAllSelect()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

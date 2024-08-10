@@ -31,7 +31,7 @@ namespace Data.Implemenst.Security
         public async Task<IEnumerable<PersonDto>> GetAllSelect()
         {
             var sql = @"SELECT * FROM dbo.Person 
-                        WHERE delete_at IS NULL
+                        WHERE deleted_at IS NULL
                         AND state = 1
                         ORDER BY Id ASC";
             return await DbContext.QueryAsync<PersonDto>(sql);

@@ -31,7 +31,7 @@ namespace Data.Implemenst.Security
         public async Task<IEnumerable<UserRoleDto>> GetAllSelect()
         {
             var sql = @"SELECT * FROM dbo.Userroles 
-                        WHERE delete_at IS NULL
+                        WHERE deleted_at IS NULL
                         AND state = 1
                         ORDER BY Id ASC";
             return await DbContext.QueryAsync<UserRoleDto>(sql);
@@ -57,9 +57,5 @@ namespace Data.Implemenst.Security
             return await DbContext.Userroles.AsNoTracking().FirstOrDefaultAsync(item => item.Id == code);
         }
 
-        Task<IEnumerable<DataSelectDto>> IDUserRol.GetAllSelect()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

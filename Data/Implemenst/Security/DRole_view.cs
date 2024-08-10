@@ -31,7 +31,7 @@ namespace Data.Implemenst.Security
         public async Task<IEnumerable<Role_viewDto>> GetAllSelect()
         {
             var sql = @"SELECT * FROM dbo.Roleview 
-                        WHERE delete_at IS NULL
+                        WHERE deleted_at IS NULL
                         AND state = 1
                         ORDER BY Id ASC";
             return await DbContext.QueryAsync<Role_viewDto>(sql);
@@ -69,7 +69,6 @@ namespace Data.Implemenst.Security
                 INNER JOIN dbo.[Modules] AS m ON m.id = v.moduleId
                 WHERE rv.id = @Id;";
 
-            // Ejecutar la consulta y mapear los resultados a MenuDto
             return await DbContext.QueryFirstOrDefaultAsync<MenuDto>(sql, new { Id = id });
         }
 
